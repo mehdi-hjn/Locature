@@ -8,9 +8,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+<<<<<<< HEAD
             <option value="$PROJECT_DIR$/Locature" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/card-slider" />
+=======
+            <option value="$PROJECT_DIR$/app" />
+>>>>>>> a6f2a08bc4f3c398cc755a3be2e9d3e100fdb29b
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

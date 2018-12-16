@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
 include ':Locature', ':card-slider'
 
+=======
+>>>>>>> a6f2a08bc4f3c398cc755a3be2e9d3e100fdb29b
 include ':app'
