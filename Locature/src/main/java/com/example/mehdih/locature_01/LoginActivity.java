@@ -140,8 +140,6 @@ public class LoginActivity extends AppCompatActivity {
                                // Changed Behaviour => Go to MapActivity as First Activity
                                Intent intent = new Intent(LoginActivity.this, MapActivity.class);
 
-                               Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-
                                Prevalent.currentOnlineUser = usersData;
                                startActivity(intent);
                             }
