@@ -157,6 +157,10 @@
                 android:layout_height="14dp"
                 android:layout_gravity="center"
                 android:background="@drawable/green_dot_small"/>
+<<<<<<< HEAD
+=======
+
+>>>>>>> c09ee29c0ed3fbdd39f4d215ab3940b0894501e2
         </FrameLayout>
 
     </RelativeLayout>

@@ -136,8 +136,12 @@ public class LoginActivity extends AppCompatActivity {
 
                                 Toast.makeText(LoginActivity.this,"Logged in Successfuly !", Toast.LENGTH_SHORT).show();
                                loadingBar.dismiss();
+
                                // Changed Behaviour => Go to MapActivity as First Activity
                                Intent intent = new Intent(LoginActivity.this, MapActivity.class);
+
+                               Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+
                                Prevalent.currentOnlineUser = usersData;
                                startActivity(intent);
                             }

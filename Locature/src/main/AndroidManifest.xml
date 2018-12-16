@@ -15,6 +15,7 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity" />
@@ -30,6 +31,14 @@
             android:name="com.example.mehdih.locature_01.MapActivity"
             android:screenOrientation="portrait">
 
+<<<<<<< HEAD
+=======
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+>>>>>>> c09ee29c0ed3fbdd39f4d215ab3940b0894501e2
         </activity>
 
         <activity

@@ -331,8 +331,12 @@ public class MapActivity extends AppCompatActivity {
 
             final int clickedPosition = recyclerView.getChildAdapterPosition(view);
             if (clickedPosition == activeCardPosition) {
+
                 // Changed the Behaviour => Go to my List View
                 final Intent intent = new Intent(MapActivity.this, HomeActivity.class);
+
+                final Intent intent = new Intent(MapActivity.this, DetailsActivity.class);
+
                 intent.putExtra(DetailsActivity.BUNDLE_IMAGE_ID, pics[activeCardPosition % pics.length]);
 
                 if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
