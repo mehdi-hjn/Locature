@@ -1,1 +1,4 @@
+
 include ':Locature', ':card-slider'
+
+include ':app'
