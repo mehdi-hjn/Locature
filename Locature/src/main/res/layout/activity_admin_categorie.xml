@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminCategorieActivity">
+    
+    <TextView
+        android:id="@+id/slogan_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Add New Product"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slogan_category"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        >
+
+        <ImageView
+            android:id="@+id/citadine"
+            android:layout_width="192dp"
+            android:layout_height="80dp"
+            android:src="@drawable/citadine" />
+
+        <ImageView
+            android:id="@+id/berling"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/modern"
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/quatre-quatre"
+            android:layout_width="191dp"
+            android:layout_height="80dp"
+            android:src="@drawable/suv"
+
+            />
+
+        <ImageView
+            android:id="@+id/limousine"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/limo"
+
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/sport"
+            android:layout_width="193dp"
+            android:layout_height="80dp"
+            android:src="@drawable/sport"
+
+            />
+
+        <ImageView
+            android:id="@+id/camion"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/camion"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
