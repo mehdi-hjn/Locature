@@ -37,9 +37,9 @@ public class MapActivity extends AppCompatActivity {
     private final int[] pics = {R.drawable.p1, R.drawable.p2, R.drawable.p3, R.drawable.p4, R.drawable.p5};
     private final int[] maps = {R.drawable.map_paris, R.drawable.map_seoul, R.drawable.map_london, R.drawable.map_beijing, R.drawable.map_greece};
     private final int[] descriptions = {R.string.text1, R.string.text2, R.string.text3, R.string.text4, R.string.text5};
-    private final String[] countries = {"PARIS", "SEOUL", "LONDON", "BEIJING", "THIRA"};
-    private final String[] places = {"The Louvre", "Gwanghwamun", "Tower Bridge", "Temple of Heaven", "Aegeana Sea"};
-    private final String[] temperatures = {"21°C", "19°C", "17°C", "23°C", "20°C"};
+    private final String[] countries = {"KENITRA", "KENITRA", "KENITRA", "KENITRA", "KENITRA"};
+    private final String[] places = {"Agence 1", "Agence 2", "Agence 3", "Agence 4", "Agence 5"};
+    private final String[] temperatures = {"21°C", "21°C", "21°C", "21°C", "21°C"};
     private final String[] times = {"Aug 1 - Dec 15    7:00-18:00", "Sep 5 - Nov 10    8:00-16:00", "Mar 8 - May 21    7:00-18:00"};
 
     private final SliderAdapter sliderAdapter = new SliderAdapter(pics, 20, new OnCardClickListener());
