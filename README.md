@@ -2,6 +2,11 @@
 
 Car-Rental made easy !
 
+## Installation 
+
+Simply git clone the repo, and run it with android-studio.
+N.B : You must import the project while doing so and not just open it.
+
 ## Features
 - **Maps agencies by city**
 - **Dynamic listing of cars by agency**
