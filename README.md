@@ -9,7 +9,7 @@ N.B : You must "File>New>Import" for doing so.
 
 ## Usage ## 
 
-Create an account, and start exploring the app and what it has to offer !
+Create an account, and start exploring the app to see what it has to offer !
 
 ## Features
 - **Maps agencies by city**
