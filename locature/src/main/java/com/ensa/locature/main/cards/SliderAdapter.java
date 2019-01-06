@@ -1,23 +1,32 @@
 package com.ensa.locature.main.cards;
 
 
+
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.ensa.locature.main.MapActivity;
 import com.ensa.locature.main.R;
 
+import java.util.ArrayList;
+
+
 public class SliderAdapter extends RecyclerView.Adapter<SliderCard> {
+
+
+    private ArrayList<MapActivity.Agence> agenceList=new ArrayList<>();
 
     private final int count;
     private final int[] content;
     private final View.OnClickListener listener;
 
-    public SliderAdapter(int[] content, int count, View.OnClickListener listener) {
+    public SliderAdapter(int[] content, int count, View.OnClickListener listener, ArrayList<MapActivity.Agence> agenceList) {
         this.content = content;
         this.count = count;
         this.listener = listener;
+        this.agenceList=agenceList;
     }
 
     @Override
@@ -40,7 +49,7 @@ public class SliderAdapter extends RecyclerView.Adapter<SliderCard> {
 
     @Override
     public void onBindViewHolder(SliderCard holder, int position) {
-        holder.setContent(content[position % content.length]);
+        holder.setContent(content[position % content.length], agenceList.get(position%content.length).getImage());
     }
 
     @Override

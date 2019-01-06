@@ -2,7 +2,7 @@ package com.ramotion.foldingcell;
 
 import android.content.Context;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
@@ -36,7 +36,7 @@ public class HeightsCalculationUnitTest {
 
     }
 
-    @Test(expected = IllegalStateException.class)
+    @org.junit.jupiter.api.Test(expected = IllegalStateException.class)
     public void defaultLogicError() throws Exception {
         FoldingCell fc = new FoldingCell(mMockContext);
         fc.calculateHeightsForAnimationParts(50, 80, 0);

@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Drop-In" />
             <option value="$PROJECT_DIR$/card-slider" />
             <option value="$PROJECT_DIR$/folding-cell" />
             <option value="$PROJECT_DIR$/locature" />

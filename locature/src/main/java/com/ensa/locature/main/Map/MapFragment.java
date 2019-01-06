@@ -56,10 +56,18 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         mGoogleMap=googleMap;
         googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 
-        googleMap.addMarker(new MarkerOptions().position(new LatLng(34.249999, -6.583331)).title("Kenitra").snippet("Snippet for Agency Info"));
-
-        CameraPosition Liberty = CameraPosition.builder().target(new LatLng(34.249999, -6.583331)).zoom(16).bearing(0).tilt(45).build();
-
-        googleMap.moveCamera(CameraUpdateFactory.newCameraPosition(Liberty));
     }
+
+    public void placeMarker(String title, String snippet, double lat, double lon) {
+        if (mGoogleMap != null) {
+            mGoogleMap.addMarker(new MarkerOptions().position(new LatLng(lat, lon)).title(title).snippet(snippet));
+        }
+    }
+
+    public void placeCamera(double lat, double lon){
+        CameraPosition Position = CameraPosition.builder().target(new LatLng(lat,lon)).zoom(16).bearing(0).tilt(45).build();
+        mGoogleMap.animateCamera(CameraUpdateFactory.newCameraPosition(Position) );
+    }
+
+
 }

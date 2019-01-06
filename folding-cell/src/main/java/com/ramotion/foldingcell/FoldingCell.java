@@ -3,9 +3,11 @@ package com.ramotion.foldingcell;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Rect;
+import android.os.SystemClock;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,12 +16,15 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.ramotion.foldingcell.animations.AnimationEndListener;
 import com.ramotion.foldingcell.animations.FoldAnimation;
 import com.ramotion.foldingcell.animations.HeightAnimation;
 import com.ramotion.foldingcell.views.FoldingCellView;
+import com.squareup.picasso.Picasso;
 
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -76,6 +81,42 @@ public class FoldingCell extends RelativeLayout {
 
         this.setClipChildren(false);
         this.setClipToPadding(false);
+    }
+
+    //My Magic
+    public void drawUnfolded(String imageURL, String name, String category, int rating, String gas,
+                             String porte, String transmission, String siege, String price){
+
+        View contentView = getChildAt(0);
+
+        ImageView image = (ImageView) contentView.findViewWithTag("Test");
+        TextView carTitle= (TextView) contentView.findViewWithTag("CarTitle");
+        TextView carCategory= (TextView) contentView.findViewWithTag("CarCategory");
+        TextView carRating= (TextView) contentView.findViewWithTag("Rating");
+        TextView carGas= (TextView) contentView.findViewWithTag("Gas");
+        TextView carPorte= (TextView) contentView.findViewWithTag("Porte");
+        TextView carTransmission= (TextView) contentView.findViewWithTag("Transmission");
+        TextView carSiege= (TextView) contentView.findViewWithTag("Siege");
+        TextView carPrice= (TextView) contentView.findViewWithTag("CarPrice");
+
+        Picasso.get().load(imageURL).into(image);
+        carTitle.setText(name);
+        carCategory.setText(category);
+        carRating.setText(String.valueOf(rating));
+        carGas.setText(gas);
+        carPorte.setText(porte);
+        carTransmission.setText(transmission);
+        carSiege.setText(siege);
+        carPrice.setText(price);
+    }
+
+    public void drawFolded(String imageURL){
+
+        View contentView = getChildAt(1);
+
+        ImageView image = (ImageView) contentView.findViewWithTag("car_preview");
+
+        Picasso.get().load(imageURL).into(image);
     }
 
     /**
@@ -135,6 +176,7 @@ public class FoldingCell extends RelativeLayout {
             contentView.setVisibility(VISIBLE);
             FoldingCell.this.mUnfolded = true;
             FoldingCell.this.mAnimationInProgress = false;
+
             this.getLayoutParams().height = contentView.getHeight();
         } else {
             // create layout container for animation elements
@@ -149,6 +191,7 @@ public class FoldingCell extends RelativeLayout {
             int part90degreeAnimationDuration = mAnimationDuration / (childCount * 2);
             startUnfoldAnimation(foldingCellElements, foldingLayout, part90degreeAnimationDuration, new AnimationEndListener() {
                 public void onAnimationEnd(Animation animation) {
+                    //Draw the cell the way you like !
                     contentView.setVisibility(VISIBLE);
                     foldingLayout.setVisibility(GONE);
                     FoldingCell.this.removeView(foldingLayout);
@@ -158,10 +201,12 @@ public class FoldingCell extends RelativeLayout {
             });
 
             startExpandHeightAnimation(heights, part90degreeAnimationDuration * 2);
+
             this.mAnimationInProgress = true;
         }
 
     }
+
 
     /**
      * Fold cell with (or without) animation

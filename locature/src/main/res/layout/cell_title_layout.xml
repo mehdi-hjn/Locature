@@ -29,6 +29,7 @@
             android:textSize="26sp" />
 
         <TextView
+            android:visibility="gone"
             android:id="@+id/title_time_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,6 +40,7 @@
             android:textSize="14sp" />
 
         <TextView
+            android:visibility="gone"
             android:id="@+id/title_date_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,7 +49,6 @@
             android:layout_alignParentStart="true"
             android:textColor="@android:color/white"
             android:textSize="12sp" />
-
 
     </RelativeLayout>
     <!-- RIGHT TITLE PART -->
@@ -64,6 +65,7 @@
         android:paddingTop="20dp">
 
         <ImageView
+            android:visibility="gone"
             android:id="@+id/title_from_to_dots"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -88,6 +90,17 @@
             android:textSize="16sp" />
 
         <ImageView
+            android:tag="car_preview"
+            android:id="@+id/car_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/applogo"
+            />
+
+        <ImageView
+            android:visibility="gone"
             android:id="@+id/title_from_to_dots_divider"
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -99,6 +112,7 @@
             android:src="@color/contentDividerLine" />
 
         <TextView
+            android:visibility="gone"
             android:id="@+id/title_to_address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -113,6 +127,7 @@
 
 
         <TextView
+            android:visibility="gone"
             android:id="@+id/title_requests_count"
             style="@style/TitleBadgeText"
             android:layout_width="wrap_content"
@@ -122,6 +137,7 @@
             android:layout_alignParentStart="true" />
 
         <TextView
+            android:visibility="gone"
             style="@style/TitleBadgeTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -131,6 +147,7 @@
             android:text="@string/requests_count_badge" />
 
         <TextView
+            android:visibility="gone"
             android:id="@+id/title_weight"
             style="@style/TitleBadgeText"
             android:layout_width="wrap_content"
@@ -141,6 +158,7 @@
             android:text="@string/weight_mock" />
 
         <TextView
+            android:visibility="gone"
             style="@style/TitleBadgeTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -150,6 +168,7 @@
             android:text="@string/weight_badge" />
 
         <TextView
+            android:visibility="gone"
             android:id="@+id/title_pledge"
             style="@style/TitleBadgeText"
             android:layout_width="wrap_content"
@@ -158,6 +177,7 @@
             android:layout_centerHorizontal="true" />
 
         <TextView
+            android:visibility="gone"
             style="@style/TitleBadgeTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

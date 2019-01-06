@@ -1,6 +1,7 @@
 package com.ramotion.cardslider;
 
 import android.graphics.PointF;
+
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearSmoothScroller;
@@ -10,6 +11,8 @@ import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 
 import java.security.InvalidParameterException;
+
+
 
 /**
  * Extended {@link LinearSnapHelper} that works <b>only</b> with {@link CardSliderLayoutManager}.

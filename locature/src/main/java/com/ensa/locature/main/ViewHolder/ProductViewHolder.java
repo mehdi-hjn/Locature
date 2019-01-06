@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.ensa.locature.main.Interface.ItemClickListner;
 import com.ensa.locature.main.R;
 
+
 public class ProductViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
     public TextView txtProductName, txtProductDesc, txtProductPrix;

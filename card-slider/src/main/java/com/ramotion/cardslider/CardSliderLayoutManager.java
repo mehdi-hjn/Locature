@@ -5,6 +5,7 @@ import android.content.res.TypedArray;
 import android.graphics.PointF;
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.view.ViewCompat;
@@ -20,11 +21,11 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.LinkedList;
 
-/**
- * A {@link android.support.v7.widget.RecyclerView.LayoutManager} implementation.
- */
+
 public class CardSliderLayoutManager extends RecyclerView.LayoutManager
         implements RecyclerView.SmoothScroller.ScrollVectorProvider {
+
+    private static int result;
 
     private static final int DEFAULT_ACTIVE_CARD_LEFT_OFFSET = 50;
     private static final int DEFAULT_CARD_WIDTH = 148;
@@ -345,7 +346,7 @@ public class CardSliderLayoutManager extends RecyclerView.LayoutManager
         if (scrollRequestedPosition != RecyclerView.NO_POSITION) {
             return scrollRequestedPosition;
         } else {
-            int result = RecyclerView.NO_POSITION;
+            result = RecyclerView.NO_POSITION;
 
             View biggestView = null;
             float lastScaleX = 0f;
@@ -370,6 +371,9 @@ public class CardSliderLayoutManager extends RecyclerView.LayoutManager
 
             return result;
         }
+    }
+    public void resetResult(){
+        result = 0 ;
     }
 
     @Nullable

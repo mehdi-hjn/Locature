@@ -1,6 +1,7 @@
 package com.ensa.locature.main.cards;
 
 import android.os.Build;
+
 import android.support.annotation.NonNull;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.CardView;
@@ -8,6 +9,7 @@ import android.view.View;
 
 import com.ramotion.cardslider.CardSliderLayoutManager;
 import com.ramotion.cardslider.DefaultViewUpdater;
+
 
 public class CardsUpdater extends DefaultViewUpdater {
 

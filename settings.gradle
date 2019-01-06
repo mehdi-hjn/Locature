@@ -1,5 +1,5 @@
 
 
-include ':locature', ':card-slider', ':folding-cell'
+include ':locature', ':card-slider', ':folding-cell', ':Drop-In'
 
 

@@ -4,13 +4,15 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:clipChildren="false">
+    android:clipChildren="false"
+    android:background="@drawable/background">
 
     <!-- Frame Title + Temperature -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="15dp"
+        android:visibility="gone">
 
         <FrameLayout
             android:id="@+id/countries"
@@ -60,7 +62,7 @@
     This is where the real map should be going-->
 
     <RelativeLayout
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="0dp"
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:animateLayoutChanges="true">
@@ -92,25 +94,6 @@
             android:background="@drawable/gradient_map"
             android:layout_below="@+id/gradient_top"/>
 
-
-        <FrameLayout
-            android:id="@+id/green_dot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <View
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:background="@drawable/green_dot_big"
-                android:alpha="0.5"/>
-
-            <View
-                android:layout_width="14dp"
-                android:layout_height="14dp"
-                android:layout_gravity="center"
-                android:background="@drawable/green_dot_small"/>
-
-        </FrameLayout>
 
     </RelativeLayout>
 
@@ -169,9 +152,29 @@
 
         </FrameLayout>
 
+        <FrameLayout
+            android:id="@+id/green_dot"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@drawable/green_dot_big"
+                android:alpha="0.5"/>
+
+            <View
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:background="@drawable/green_dot_small"/>
+
+        </FrameLayout>
+
     </RelativeLayout>
 
-    <!-- Box with the name of the agency/location
+    <!-- Box with the name of the agency/location text
     -->
     <FrameLayout
         android:layout_width="match_parent"

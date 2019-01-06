@@ -1,8 +1,11 @@
 package com.ramotion.cardslider;
 
+
 import android.support.annotation.NonNull;
 import android.support.v4.view.ViewCompat;
 import android.view.View;
+
+
 
 /**
  * Default implementation of {@link CardSliderLayoutManager.ViewUpdater}

@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:visibility="gone">
+    android:visibility="gone"
+    >
 
     <!-- content header line -->
     <RelativeLayout
@@ -16,6 +17,7 @@
         android:paddingTop="7dp">
 
         <TextView
+            android:tag="CarTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -24,6 +26,7 @@
             android:textSize="20sp" />
 
         <TextView
+            android:tag="CarPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -46,16 +49,19 @@
     <!-- content header image -->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/container">
 
         <ImageView
             android:id="@+id/head_image"
+            android:tag="Test"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/head_image" />
+            />
 
         <TextView
+            android:visibility="gone"
             android:id="@+id/head_image_left_text"
             style="@style/ContentImageBadgeText"
             android:layout_width="wrap_content"
@@ -69,6 +75,7 @@
             android:text="@string/requests_count_mock" />
 
         <TextView
+            android:visibility="gone"
             style="@style/ContentImageBadgeTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -80,6 +87,7 @@
             android:text="@string/requests_count_badge" />
 
         <TextView
+            android:visibility="gone"
             android:id="@+id/head_image_right_text"
             style="@style/ContentImageBadgeText"
             android:layout_width="wrap_content"
@@ -93,6 +101,7 @@
             android:text="@string/weight_mock" />
 
         <TextView
+            android:visibility="gone"
             style="@style/ContentImageBadgeTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -102,6 +111,7 @@
             android:text="@string/weight_badge" />
 
         <TextView
+            android:visibility="gone"
             android:id="@+id/head_image_center_text"
             style="@style/ContentImageBadgeText"
             android:layout_width="wrap_content"
@@ -112,6 +122,7 @@
             android:text="@string/pledge_mock" />
 
         <TextView
+            android:visibility="gone"
             style="@style/ContentImageBadgeTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -140,6 +151,7 @@
             android:layout_height="match_parent">
 
             <TextView
+                android:visibility="gone"
                 android:id="@+id/content_avatar_title"
                 style="@style/ContentMainBadgeTitle"
                 android:layout_width="wrap_content"
@@ -150,6 +162,7 @@
                 android:text="@string/sender_badge" />
 
             <ImageView
+                android:visibility="gone"
                 android:id="@+id/content_avatar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -159,6 +172,7 @@
 
             <TextView
                 android:id="@+id/content_name_view"
+                android:tag="CarCategory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/content_avatar"
@@ -182,6 +196,7 @@
                 android:src="@drawable/stars" />
 
             <TextView
+                android:tag="Rating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/content_rating_stars"
@@ -231,14 +246,16 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:text="@string/from_badge" />
+                    android:text="Type d'échappement" />
 
                 <TextView
+                    android:tag="Gas"
                     android:id="@+id/content_from_address_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignLeft="@id/content_from_badge"
                     android:layout_alignStart="@id/content_from_badge"
+                    android:layout_marginTop="10dp"
                     android:layout_below="@id/content_from_badge"
                     android:text="@string/content_from1_mock"
                     android:textColor="@color/mainTextColor"
@@ -246,6 +263,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:visibility="gone"
                     android:id="@+id/content_from_address_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -270,10 +288,12 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:text="@string/to_badge" />
+                    android:text="Transmission" />
 
                 <TextView
+                    android:tag="Transmission"
                     android:id="@+id/content_to_address_1"
+                    android:layout_marginTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignLeft="@id/content_to_badge"
@@ -285,6 +305,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:visibility="gone"
                     android:id="@+id/content_to_address_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -334,9 +355,10 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:text="@string/delivery_date_badge" />
+                    android:text="Nombre de portes" />
 
                 <TextView
+                    android:tag="Porte"
                     android:id="@+id/content_delivery_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -344,11 +366,13 @@
                     android:layout_alignStart="@id/content_delivery_date_badge"
                     android:layout_below="@id/content_delivery_date_badge"
                     android:text="@string/delivery_time_mock"
+                    android:layout_marginTop="10dp"
                     android:textColor="@color/mainTextColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
+                    android:visibility="gone"
                     android:id="@+id/content_delivery_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -373,10 +397,12 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:text="@string/deadline_badge" />
+                    android:text="Nombre de Sièges" />
 
                 <TextView
+                    android:tag="Siege"
                     android:id="@+id/content_deadline_time"
+                    android:layout_marginTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignLeft="@id/content_deadline_badge"
@@ -415,6 +441,7 @@
             android:textSize="20sp" />
 
         <TextView
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"

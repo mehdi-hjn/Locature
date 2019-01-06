@@ -1,6 +1,7 @@
 package com.ensa.locature.main.cards;
 
 import android.graphics.Bitmap;
+
 import android.support.annotation.DrawableRes;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -9,8 +10,11 @@ import android.widget.ImageView;
 
 import com.ensa.locature.main.utils.DecodeBitmapTask;
 import com.ensa.locature.main.R;
+import com.squareup.picasso.Picasso;
+
 
 public class SliderCard extends RecyclerView.ViewHolder implements DecodeBitmapTask.Listener {
+
 
     private static int viewWidth = 0;
     private static int viewHeight = 0;
@@ -24,20 +28,28 @@ public class SliderCard extends RecyclerView.ViewHolder implements DecodeBitmapT
         imageView = (ImageView) itemView.findViewById(R.id.image);
     }
 
-    void setContent(@DrawableRes final int resId) {
+
+    void setContent(@DrawableRes final int resId, final String imageURL) {
         if (viewWidth == 0) {
             itemView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
                 @Override
                 public void onGlobalLayout() {
                     itemView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
 
-                    viewWidth = itemView.getWidth();
-                    viewHeight = itemView.getHeight();
-                    loadBitmap(resId);
+                    //viewWidth = itemView.getWidth();
+                    //viewHeight = itemView.getHeight();
+                    //loadBitmap(resId);
+
+                    // Here goes the magic
+                    // I want to load the picture for each agency = one view in the slider
+                    Picasso.get().load(imageURL).into(imageView);
+
                 }
             });
         } else {
-            loadBitmap(resId);
+            //loadBitmap(resId);
+
+            Picasso.get().load(imageURL).into(imageView);
         }
     }
 

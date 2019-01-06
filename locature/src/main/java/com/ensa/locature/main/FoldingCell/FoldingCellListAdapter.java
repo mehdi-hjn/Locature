@@ -1,15 +1,18 @@
 package com.ensa.locature.main.FoldingCell;
 
 import android.content.Context;
+
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.ramotion.foldingcell.FoldingCell;
 import com.ensa.locature.main.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +52,11 @@ public class FoldingCellListAdapter extends ArrayAdapter<Item> {
             viewHolder.requestsCount = cell.findViewById(R.id.title_requests_count);
             viewHolder.pledgePrice = cell.findViewById(R.id.title_pledge);
             viewHolder.contentRequestBtn = cell.findViewById(R.id.content_request_btn);
+
+            viewHolder.image=cell.findViewById(R.id.car_preview);
+
             cell.setTag(viewHolder);
+
         } else {
             // for existing cell set valid valid state(without animation)
             if (unfoldedIndexes.contains(position)) {
@@ -71,6 +78,8 @@ public class FoldingCellListAdapter extends ArrayAdapter<Item> {
         viewHolder.toAddress.setText(item.getToAddress());
         viewHolder.requestsCount.setText(String.valueOf(item.getRequestsCount()));
         viewHolder.pledgePrice.setText(item.getPledgePrice());
+
+        Picasso.get().load(item.getImage()).into(viewHolder.image);
 
         // set custom btn handler for list item from that item
         if (item.getRequestBtnClickListener() != null) {
@@ -117,5 +126,6 @@ public class FoldingCellListAdapter extends ArrayAdapter<Item> {
         TextView requestsCount;
         TextView date;
         TextView time;
+        ImageView image;
     }
 }

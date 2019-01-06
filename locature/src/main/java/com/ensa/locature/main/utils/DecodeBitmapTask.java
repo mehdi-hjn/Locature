@@ -14,11 +14,11 @@ import android.os.Build;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 
+
 import com.ensa.locature.main.R;
 
 import java.lang.ref.Reference;
 import java.lang.ref.WeakReference;
-
 
 public class DecodeBitmapTask extends AsyncTask<Void, Void, Bitmap> {
 

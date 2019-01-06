@@ -1,0 +1,77 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:1:1-22:12
+INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:1:1-22:12
+INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:1:1-22:12
+INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:1:1-22:12
+INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:1:1-22:12
+INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:1:1-22:12
+INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:1:1-22:12
+	package
+		ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:3:5-47
+		INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml
+		INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml
+		ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:1:1-22:12
+		INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:2:5-51
+	android:versionCode
+		INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml
+		ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:1:1-22:12
+		INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:5:5-78
+	android:name
+		ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:5:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:6:22-64
+application
+ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:8:5-20:19
+	android:supportsRtl
+		ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:9:9-35
+	tools:ignore
+		ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:10:9-39
+activity#com.braintreepayments.api.threedsecure.ThreeDSecureWebViewActivity
+ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:12:9-13:61
+	android:theme
+		ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:13:13-59
+	android:name
+		ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:12:19-100
+activity#com.braintreepayments.api.dropin.DropInActivity
+ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:14:9-15:63
+	android:theme
+		ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:15:13-61
+	android:name
+		ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:14:19-81
+activity#com.braintreepayments.api.dropin.AddCardActivity
+ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:16:9-17:65
+	android:theme
+		ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:17:13-62
+	android:name
+		ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:16:19-82
+activity#com.braintreepayments.api.dropin.VaultManagerActivity
+ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:18:9-19:70
+	android:theme
+		ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:19:13-67
+	android:name
+		ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml:18:19-87
+uses-sdk
+INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml
+INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml
+INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml
+INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml
+		ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml
+		INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml
+		ADDED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml
+		INJECTED from /home/amounou/Projects/Workspace Locature/Locature/Drop-In/src/main/AndroidManifest.xml

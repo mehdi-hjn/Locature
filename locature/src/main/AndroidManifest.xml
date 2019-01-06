@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.ensa.locature.main">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -11,12 +12,14 @@
         />
 
     <application
+        android:name="com.ensa.locature.main.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/DemoAppTheme"
+        >
 
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
 
@@ -26,7 +29,6 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
         <activity android:name="com.ensa.locature.main.LoginActivity" />
@@ -42,16 +44,33 @@
         <activity
             android:name="com.ensa.locature.main.MapActivity"
             android:screenOrientation="portrait">
+
         </activity>
 
         <activity
             android:name="com.ensa.locature.main.DetailsActivity"
             android:screenOrientation="portrait"/>
 
-        <!-- List Activity -->
+        <!-- List Activity AIzaSyCc7F02gaw3o4AnRHFy5Wln7j0MIgW9o4w -->
 
         <activity android:name="com.ensa.locature.main.ListActivity">
 
+        </activity>
+
+        <activity android:name="com.ensa.locature.main.PayActivity">
+
+        </activity>
+        <activity android:name=".SettingsActivity" android:label="@string/options" />
+        <activity android:name=".CreateTransactionActivity" />
+
+        <activity android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <data android:scheme="${applicationId}.braintree" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
         </activity>
 
         <meta-data
