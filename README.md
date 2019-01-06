@@ -4,8 +4,8 @@ Car-Rental made easy !
 
 ## Installation 
 
-Simply git clone the repo, and run it with android-studio.
-N.B : You must import the project while doing so and not just open it.
+Simply git clone the repo, and run it with android-studio. <br>
+N.B : You must "File>New>Import" for doing so.
 
 ## Features
 - **Maps agencies by city**
