@@ -7,6 +7,10 @@ Car-Rental made easy !
 Simply git clone the repo, and run it with android-studio. <br>
 N.B : You must "File>New>Import" for doing so.
 
+## Usage ## 
+
+Create an account, and start exploring the app and what it has to offer !
+
 ## Features
 - **Maps agencies by city**
 - **Dynamic listing of cars by agency**
